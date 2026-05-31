@@ -1,0 +1,424 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumen Roy | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.7;
+}
+
+
+header{
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+
+.hero{
+    padding-top:120px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+}
+
+.hero-content{
+    max-width:1100px;
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.profile-img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h3{
+    color:#93c5fd;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e293b;
+    font-size:2rem;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.project{
+    margin-bottom:25px;
+}
+
+.project h3{
+    color:#1e40af;
+    margin-bottom:10px;
+}
+
+.contact-info{
+    text-align:center;
+}
+
+.contact-info a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+#themeBtn{
+    padding:8px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+#themeBtn:hover{
+				background:#1860e6;
+				color:white;
+}
+
+.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+.dark-mode .card,
+.dark-mode .skill-box{
+    background:#1e1e1e;
+    color:#f5f5f5;
+}
+
+.dark-mode .section-title{
+    color:#60a5fa;
+}
+
+.dark-mode a{
+    color:#93c5fd;
+}
+
+.btn{
+	color: white;
+}
+
+@media(max-width:768px){
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    .nav-container{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">Portfolio</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+											<button id="themeBtn" style="margin-left: 10px;">🌙</button>
+        </nav>
+    </div>
+</header>
+
+
+<section class="hero">
+    <div class="hero-content">
+
+        <img src="sumepic.png" alt="Sumen Roy" class="profile-img">
+
+        <div class="hero-text">
+            <h1>Sumen Roy</h1>
+            <h3>Electronics & Communication Engineering Student</h3>
+
+            <p>
+                Passionate about software development, web technologies,
+                and engineering problem-solving. I enjoy building modern
+                web applications, learning new technologies, and combining
+                engineering concepts with practical software solutions.
+            </p>
+
+            <a href="#contact" class="btn"><p style="color: white;">Contact Me</p></a>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+            <p>
+                I am currently pursuing Electronics and Communication Engineering (ECE)
+                at Government College of Engineering and Ceramic Technology (GCECT).
+                My interests include web development, software engineering,
+                Python programming, C/C++ development, and problem-solving.
+            </p>
+
+            <br>
+
+            <p>
+                I continuously work on improving my technical skills and enjoy
+                developing projects that bridge engineering knowledge with modern
+                software technologies.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills">
+    <div class="container">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+                <h3>Programming</h3>
+                <p>Python, C, C++, JavaScript</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, React.js, Next.js</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Database</h3>
+                <p>MongoDB, MySQL</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Engineering</h3>
+                <p>Digital Electronics, Circuit Analysis, Communication Systems</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <div class="container">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="card">
+
+           
+
+            <div class="project">
+                <h3>Personal Expense Tracker</h3>
+                <p>
+                    Built a web-based expense tracking application using
+                    HTML, CSS, and JavaScript to record transactions,
+                    categorize expenses, and monitor spending habits.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>HTML To-Do List Application</h3>
+                <p>
+                    Created a task management application using HTML, CSS,
+                    and JavaScript. Users can add, delete, and organize
+                    daily tasks through a clean and responsive interface,
+                    helping improve productivity and workflow management.
+                </p>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card contact-info">
+
+            <p><strong>Email:</strong></p>
+            <p>
+                <a href="mailto:sumenr6@gmail.com">
+                    sumenr6@gmail.com
+                </a>
+            </p>
+
+            <br>
+
+            <p><strong>LinkedIn:</strong></p>
+            <p>
+                <a href="https://www.linkedin.com/in/sumen-roy-013558382/" target="_blank">
+                    linkedin.com/in/sumen-roy-013558382
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sumen Roy. All Rights Reserved.</p>
+				
+</footer>
+
+</body>
+<script>
+const themeBtn = document.getElementById("themeBtn");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeBtn.textContent = "☀️";
+}
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme","dark");
+        themeBtn.textContent = "☀️";
+    }else{
+        localStorage.setItem("theme","light");
+        themeBtn.textContent = "🌙";
+    }
+});
+</script>
+</html>
